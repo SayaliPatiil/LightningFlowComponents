@@ -134,7 +134,7 @@ global with sharing class FormulaEvaluator {
             queryString = queryString + ' FROM ' + objectName + ' WHERE Id =\'' + objectId + '\' LIMIT 1';
         }
 
-        List<sObject> objectInfo = Database.query(queryString);
+        
 
         if (objectInfo.size() > 0) {
             for (String field : fields) {

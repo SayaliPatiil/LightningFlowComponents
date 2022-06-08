@@ -29,6 +29,7 @@ global without sharing class AddQuotesToFields {
                 input.quoteType = 'SINGLE';
             }
             List<String> transformed = new List<String>{};
+                     List<String> transformed = new List<String>{};
             for (String field: input.fieldCollection) {
                 if (input.quoteType == 'DOUBLE') {
                     field = '"' + field + '"';
